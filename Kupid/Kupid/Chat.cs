@@ -82,7 +82,12 @@ namespace Kupid
         /// <param name="sadrzaj"></param>
         public void DodajNovuPoruku(Korisnik primalac, Korisnik posiljalac, string sadrzaj)
         {
-            throw new NotImplementedException();
+            if (String.IsNullOrWhiteSpace(sadrzaj) || sadrzaj.Contains("pogrdna rijec")) 
+                throw new InvalidOperationException("Neispravan sadržaj poruke!");
+           
+            poruke.Add(new Poruka(posiljalac, primalac, sadrzaj));
+            najnovijaPoruka = DateTime.Now;
+            
         }
 
         #endregion

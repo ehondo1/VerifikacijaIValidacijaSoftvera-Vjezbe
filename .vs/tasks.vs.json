@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-NoviTestovi",
+      "appliesTo": "Kupid/Unit Testovi/NoviTestovi.cs",
+      "type": "launch"
+    }
+  ]
+}
