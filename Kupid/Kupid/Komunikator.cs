@@ -88,8 +88,18 @@ namespace Kupid
         /// nijedan chat u kojem se nalazi korisnik sa imenom "admin".
         /// </summary>
         public List<Poruka> IzlistavanjeSvihPorukaSaSadržajem(string sadržaj)
-        {
-            throw new NotImplementedException();
+        {   
+            List<Poruka> lista = new List<Poruka>();
+
+            if(sadržaj==null) throw new InvalidOperationException("Prazan sadržaj");
+            if(razgovori.Count==0) throw new InvalidOperationException("Ne postoji nijedan chat");
+            foreach(Chat c in razgovori) {
+                foreach(Poruka p in c.Poruke) {
+                    if(p.Sadrzaj.Contains(sadržaj) && p.Primalac.Ime!="admin" && p.Posiljalac.Ime!="admin")
+                        lista.Add(p);
+                }
+            }
+            return lista;
         }
 
         public bool DaLiJeSpajanjeUspjesno(Chat c, IRecenzija r)
