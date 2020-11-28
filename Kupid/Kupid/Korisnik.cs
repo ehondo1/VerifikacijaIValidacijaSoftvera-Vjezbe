@@ -150,8 +150,23 @@ namespace Kupid
         /// </summary>
         /// <param name="slično"></param>
         public void PromjenaParametara(bool slično)
-        {
-            throw new NotImplementedException();
+        {   
+            if(slično)
+            {
+                zeljenaLokacija = lokacija;
+                zeljeniMinGodina = godine - 2;
+                zeljeniMaxGodina = godine + 2;
+            }
+            else
+            {
+                if (lokacija != Lokacija.Sarajevo) lokacija = Lokacija.Sarajevo;
+                else
+                {
+                    lokacija = Lokacija.Bihać;
+                }
+                zeljeniMinGodina = godine - 10;
+                zeljeniMaxGodina = godine + 10;
+            }
         }
 
         #endregion
