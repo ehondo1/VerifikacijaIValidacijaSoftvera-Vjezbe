@@ -11,7 +11,7 @@ namespace Unit_Testovi
         public void TestPromjenaParametaraSlicno()
         {
             Korisnik k1 = new Korisnik("Mubina", "Kamberovic", Lokacija.Sarajevo, Lokacija.Zenica, 21, false,19,29);
-            Korisnik k2 = new Korisnik("Nadija", "Borovina", Lokacija.Mostar, Lokacija.Bihać, 21, false,18,30);
+            
             bool slicno = true;
             k1.PromjenaParametara(slicno);
             Assert.AreEqual(k1.ZeljenaLokacija, k1.Lokacija);
@@ -24,7 +24,7 @@ namespace Unit_Testovi
             Korisnik k2 = new Korisnik("Nadija", "Borovina", Lokacija.Mostar, Lokacija.Bihać, 21, false, 18, 30);
             bool slicno = false;
             k2.PromjenaParametara(slicno);
-            Assert.AreEqual(k2.Lokacija,"Bihać");
+            Assert.AreEqual(k2.Lokacija,"Sarajevo");
            
         }
         [TestMethod]
@@ -33,7 +33,7 @@ namespace Unit_Testovi
             Korisnik k2 = new Korisnik("Nadija", "Borovina", Lokacija.Mostar, Lokacija.Bihać, 21, false, 18, 30);
             bool slicno = false;
             k2.PromjenaParametara(slicno);
-            Assert.AreEqual(k2.ZeljeniMaxGodina, 40);
+            Assert.AreEqual(k2.ZeljeniMaxGodina, 32);
 
         }
     }
