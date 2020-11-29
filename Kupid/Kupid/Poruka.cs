@@ -66,7 +66,7 @@ namespace Kupid
             bool mingodina = false;
             bool maxgodina = false;
             bool godine = false;
-            if (sadrzaj.Contains("volim te")) return 1;
+            if (sadrzaj.Contains("volim te")) return 100;
             if (posiljalac.Lokacija == primalac.Lokacija) istalokacija = true;
             if (posiljalac.ZeljeniMinGodina == primalac.ZeljeniMinGodina) mingodina = true;
             if (posiljalac.ZeljeniMaxGodina == primalac.ZeljeniMaxGodina) maxgodina = true;
@@ -75,7 +75,7 @@ namespace Kupid
             if (mingodina) kompatibilnost += 0.25;
             if (maxgodina) kompatibilnost += 0.25;
             if (godine) kompatibilnost += 0.25;
-            return kompatibilnost;
+            return (kompatibilnost*100);
         }
 
         #endregion

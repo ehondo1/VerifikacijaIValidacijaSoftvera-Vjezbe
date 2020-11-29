@@ -12,7 +12,9 @@ namespace Kupid
     {
         public string DajUtisak()
         {
-            throw new NotImplementedException();
+            String s = "";
+            s += "Pozitivan";
+            return s;
         }
     }
 }
