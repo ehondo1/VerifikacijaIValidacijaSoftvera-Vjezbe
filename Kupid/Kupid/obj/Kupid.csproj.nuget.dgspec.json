@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj": {}
+    "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj": {
+    "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj",
         "projectName": "Kupid",
-        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
