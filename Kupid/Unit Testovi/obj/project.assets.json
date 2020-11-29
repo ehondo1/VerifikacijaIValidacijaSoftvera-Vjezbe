@@ -5732,19 +5732,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Korisnik\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
       "projectName": "Unit Testovi",
-      "projectPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
-      "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Unit Testovi\\obj\\",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5757,8 +5757,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj": {
-              "projectPath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Kupid\\Kupid.csproj"
+            "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj"
             }
           }
         }
