@@ -117,7 +117,39 @@ namespace Kupid
 
         public void SpajanjeKorisnika()
         {
-            throw new NotImplementedException();
+            bool postoji = false;
+            foreach(Korisnik k in korisnici)
+            {
+                foreach(Korisnik k1 in korisnici)
+                {
+                    if(k1.Ime!=k.Ime && ((k1.Lokacija.Equals(k.Lokacija) && k1.ZeljenaLokacija.Equals(k.ZeljenaLokacija)) || k1.Godine.Equals(k.Godine)))
+                    {
+
+                        Chat chat = new Chat(k, k1);
+                        if (razgovori.Count >= 1)
+                        {
+                            foreach (Chat c in razgovori)
+                            {
+                                if (!c.Korisnici.Contains(k1) || !c.Korisnici.Contains(k))
+                                {
+                                    razgovori.Add(chat);
+                                    postoji = true;
+                                }
+                                if (postoji) break;
+
+                            }
+                        }
+                        else
+                        {
+                            razgovori.Add(chat);
+                            postoji = true;
+                        }
+                    }
+                   if (postoji) break;
+
+                }
+            }
+            if (!postoji) throw new ArgumentException("Nema spajanja");
         }
 
         #endregion

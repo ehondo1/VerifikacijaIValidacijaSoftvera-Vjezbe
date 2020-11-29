@@ -42,7 +42,7 @@ namespace Unit_Testovi
             Poruka poruka = new Poruka(k1, k2, "volim te puno");
             double kompatibilnost = poruka.IzračunajKompatibilnostKorisnika();
 
-            Assert.AreEqual(1.0,kompatibilnost);
+            Assert.AreEqual(100,kompatibilnost);
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace Unit_Testovi
             Poruka poruka = new Poruka(k1, k2, "Pozdrav");
             double kompatibilnost = poruka.IzračunajKompatibilnostKorisnika();
 
-            Assert.IsTrue(kompatibilnost<1);
+            Assert.IsTrue(kompatibilnost<100);
         }
 
 
