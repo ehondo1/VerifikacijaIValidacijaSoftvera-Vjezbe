@@ -5737,11 +5737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
       "projectName": "Unit Testovi",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Unit Testovi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5757,8 +5757,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj"
+            "C:\\Users\\User\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe1\\Kupid\\Kupid\\Kupid.csproj"
             }
           }
         }
