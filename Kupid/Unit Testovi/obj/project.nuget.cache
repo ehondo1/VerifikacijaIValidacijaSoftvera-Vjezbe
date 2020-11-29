@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5e5PlNnNiodRHIO7cFlviO8k+aeTevJ7LAXpBKF9fplxtOGRuNL8u+WUnDQR4uHvUNuWL2pzApnucCdRh+PdUQ==",
+  "dgSpecHash": "dDhC2YfHXXxMxLXHO4AvSKthoGULBWXgp341n+XbTcfuoIrHAJznbV9MQ8Nb2D6BF3e7e349Y6swkylane3Y+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\source\\repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Source\\Repos\\VerifikacijaIValidacijaSoftvera-Vjezbe\\Kupid\\Unit Testovi\\Unit Testovi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
