@@ -45,13 +45,21 @@ namespace Unit_Testovi
         
         public void TestKonstruktor()
         {
-            Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false, 20, 18);
-            Korisnik k2 = new Korisnik("user2", "user2*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false, 30, 20);
+            Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
+            Korisnik k2 = new Korisnik("user2", "user2*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
             Chat chat = new Chat(k1, k2);
             Assert.IsFalse(chat.Poruke.Count == 1);
 
         }
 
+        [TestMethod]
+        public void TestKonstruktor1()
+        {
+           
+            Chat chat = new Chat();
+            Assert.IsTrue(chat.PocetakChata<=DateTime.Now);
+
+        }
 
     }
 }
