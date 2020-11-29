@@ -153,19 +153,19 @@ namespace Kupid
         {   
             if(slično)
             {
-                ZeljenaLokacija = Lokacija;
-                ZeljeniMinGodina = Godine - 2;
-                ZeljeniMaxGodina = Godine + 2;
+                zeljenaLokacija = lokacija;
+                zeljeniMinGodina = godine - 2;
+                zeljeniMaxGodina = godine + 2;
             }
             else
             {
-                if (lokacija != Lokacija.Sarajevo) Lokacija = Lokacija.Sarajevo;
+                if (lokacija != Lokacija.Sarajevo) lokacija = Lokacija.Sarajevo;
                 else
                 {
-                    Lokacija = Lokacija.Bihać;
+                    lokacija = Lokacija.Bihać;
                 }
-                ZeljeniMinGodina = Godine - 10;
-                ZeljeniMaxGodina = Godine + 10;
+                zeljeniMinGodina = godine - 10;
+                zeljeniMaxGodina = godine + 10;
             }
         }
 
