@@ -27,8 +27,22 @@ namespace Unit_Testovi
             Assert.AreEqual(k2.Lokacija,Lokacija.Sarajevo);
            
         }
+
         [TestMethod]
         public void TestPromjenaParametaraSlicno2()
+        {
+            Korisnik k1 = new Korisnik("Nadija", "user2*+", Lokacija.Mostar, Lokacija.Bihać, 21, false, 18, 30);
+            bool slicno = true;
+            k1.PromjenaParametara(slicno);
+            Assert.AreEqual(k1.ZeljenaLokacija, k1.Lokacija);
+            Assert.AreEqual(k1.ZeljeniMinGodina, 19);
+            Assert.AreEqual(k1.ZeljeniMaxGodina, 23);
+
+        }
+
+
+        [TestMethod]
+        public void TestPromjenaParametaraSlicno3()
         {
             Korisnik k2 = new Korisnik("Nadija", "user2*+", Lokacija.Mostar, Lokacija.Bihać, 21, false, 18, 30);
             bool slicno = false;
@@ -36,11 +50,24 @@ namespace Unit_Testovi
             Assert.AreEqual(k2.ZeljeniMaxGodina, 31);
 
         }
+
+        [TestMethod]
+        public void TestPromjenaParametaraSlicno4()
+        {
+            Korisnik k2 = new Korisnik("Nadija", "user2*+", Lokacija.Sarajevo, Lokacija.Bihać, 21, false, 18, 30);
+            bool slicno = false;
+            k2.PromjenaParametara(slicno);
+            Assert.AreEqual(k2.Lokacija, Lokacija.Bihać);
+            Assert.AreEqual(k2.ZeljeniMinGodina, 11);
+            Assert.AreEqual(k2.ZeljeniMaxGodina, 31);
+
+        }
+
+
         [TestMethod]
         public void TestKonstruktor()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 19, 29);
-
           
             Assert.AreEqual(k1.ZeljenaLokacija, Lokacija.Zenica);
 
@@ -51,7 +78,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 17, 29);
 
-
             Assert.AreEqual(k1.ZeljeniMinGodina,21);
 
         }
@@ -61,7 +87,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false,0,20);
 
-
             Assert.AreEqual(k1.ZeljeniMaxGodina, 20);
 
         }
@@ -70,7 +95,6 @@ namespace Unit_Testovi
         public void TestKonstruktor3()
         {
             Korisnik k1 = new Korisnik();
-
 
             Assert.AreEqual(k1.Ime, null);
 
@@ -93,8 +117,6 @@ namespace Unit_Testovi
             Korisnik k1 = new Korisnik();
             k1.Ime = "";
 
-           
-
         }
 
         [TestMethod]
@@ -103,7 +125,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik();
             k1.Ime = "Husoemanegramuhamedmubinafarisabdulahmubina";
-
 
         }
 
@@ -135,8 +156,6 @@ namespace Unit_Testovi
             Korisnik k1 = new Korisnik();
             k1.Password = "xy";
 
-
-
         }
 
         [TestMethod]
@@ -145,8 +164,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik();
             k1.Password = "";
-
-
 
         }
 
@@ -157,8 +174,6 @@ namespace Unit_Testovi
             Korisnik k1 = new Korisnik();
             k1.Password = "xy+";
 
-
-
         }
 
         [TestMethod]
@@ -167,8 +182,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik();
             k1.Password = "xy*";
-
-
 
         }
 
@@ -179,12 +192,9 @@ namespace Unit_Testovi
             Korisnik k1 = new Korisnik();
             k1.Password = "ovojeetf+*";
 
-
-
         }
 
         [TestMethod]
-    
         public void TestGetterPassword()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 0, 20);
@@ -193,7 +203,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestSetterLokacija()
         {
             Korisnik k1 = new Korisnik();
@@ -203,7 +212,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterLokacija()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 0, 20);
@@ -214,7 +222,6 @@ namespace Unit_Testovi
 
 
         [TestMethod]
-
         public void TestSetterZeljenaLokacija()
         {
             Korisnik k1 = new Korisnik();
@@ -224,7 +231,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterZeljenaLokacija()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 0, 20);
@@ -241,11 +247,9 @@ namespace Unit_Testovi
             Korisnik k1 = new Korisnik();
             k1.Godine = 15;
           
-
         }
 
         [TestMethod]
-
         public void TestSetterGodine1()
         {
             Korisnik k1 = new Korisnik();
@@ -262,6 +266,7 @@ namespace Unit_Testovi
             Assert.AreEqual(k1.Godine, 21);
 
         }
+
         [TestMethod]
         public void TestSetterZeljeniMinGodina()
         {
@@ -272,6 +277,7 @@ namespace Unit_Testovi
             Assert.AreEqual(k1.ZeljeniMinGodina, 11);
 
         }
+
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestSetterZeljeniMinGodina1()
@@ -293,7 +299,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-        
         public void TestGetterZeljeniMinGodina()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 0, 20);
@@ -311,6 +316,7 @@ namespace Unit_Testovi
             Assert.AreEqual(k1.ZeljeniMaxGodina, 17);
 
         }
+
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestSetterZeljeniMaxGodina1()
@@ -332,7 +338,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterZeljeniMaxGodina()
         {
             Korisnik k1 = new Korisnik("Mubina", "xyz*+", Lokacija.Sarajevo, Lokacija.Zenica, 21, false, 0, 20);

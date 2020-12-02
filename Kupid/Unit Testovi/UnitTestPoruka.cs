@@ -30,7 +30,6 @@ namespace Unit_Testovi
 
             Poruka poruka = new Poruka(k1, k2, "Cao");
 
-
         }
 
         [TestMethod]
@@ -69,7 +68,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-        
         public void TestSetterSadrzaj2()
         {
             Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Trebinje, 20, false, 10, 20);
@@ -81,7 +79,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterSadrzaj()
         {
             Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Trebinje, 20, false, 10, 20);
@@ -92,7 +89,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterPrimalac()
         {
             Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Trebinje, 20, false, 10, 20);
@@ -103,7 +99,6 @@ namespace Unit_Testovi
         }
 
         [TestMethod]
-
         public void TestGetterPosiljalac()
         {
             Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Trebinje, 20, false, 10, 20);

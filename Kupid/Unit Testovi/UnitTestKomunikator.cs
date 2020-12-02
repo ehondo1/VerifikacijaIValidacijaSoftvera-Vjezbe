@@ -15,7 +15,6 @@ namespace Unit_Testovi
         {
             Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
             Korisnik k2 = new Korisnik("user2", "user2*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
-            //Korisnik k3 = new Korisnik("admin", "user3*+", Lokacija.Mostar, Lokacija.Sarajevo, 21, false);
 
             Chat chat = new Chat(k1, k2);
             chat.DodajNovuPoruku(k1, k2, "Cao");
@@ -42,7 +41,7 @@ namespace Unit_Testovi
 
 
 
-            [TestMethod]
+        [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestIzlistavanjePoruka1()
         {
@@ -57,9 +56,6 @@ namespace Unit_Testovi
             Komunikator k = new Komunikator();
             List<Poruka> rezultat = new List<Poruka>();
             rezultat = k.IzlistavanjeSvihPorukaSaSadržajem("");
-            
-
-            Assert.AreEqual(rezultat.Count, 0);
         }
 
         [TestMethod]
@@ -547,7 +543,6 @@ namespace Unit_Testovi
 
             Assert.AreEqual(k.Razgovori.Count, 4);
 
-
         }
 
 
@@ -568,6 +563,23 @@ namespace Unit_Testovi
 
             Assert.AreEqual(k.Razgovori.Count, 3);
 
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestIzlistavanjePoruka3()
+        {
+            Korisnik k1 = new Korisnik("user1", "user1*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
+            Korisnik k2 = new Korisnik("user2", "user2*+", Lokacija.Sarajevo, Lokacija.Sarajevo, 20, false);
+            Poruka poruka1 = new Poruka(k1, k2, "Cao, pozdravljam te");
+            List<Poruka> lista = new List<Poruka>();
+            lista.Add(poruka1);
+
+            Chat chat = new Chat(k1, k2);
+
+            Komunikator k = new Komunikator();
+            List<Poruka> rezultat = new List<Poruka>();
+            rezultat = k.IzlistavanjeSvihPorukaSaSadržajem(null);
 
         }
 
